@@ -20,8 +20,8 @@ class Favourite extends Component{
         return(
 
             
-            this.state.fav.map(item=>{
-              if(item.isFavourite){
+            this.state.fav.filter(item=>item.isFavourite).map(item=>{
+            
                 return(
                   
                     <div className="cardWrapper" >
@@ -33,7 +33,7 @@ class Favourite extends Component{
                     </div>
                    </div>
                    
-                   )}
+                   )
                                            
             })
         )
