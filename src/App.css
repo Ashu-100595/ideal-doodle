@@ -1,34 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+p{
+ font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('https://cutewallpaper.org/21/4k-space-background/4K-UHD-25fps-FREE-Video-Background-Stars-Space-Trip-GIF.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Nav Content CSS */
+.navBar{
+  margin-top: -20px;
+  margin-bottom: -65px;
+  background: rgba(102, 51, 153, 0.7);
+  border-bottom: 2px outset rgba(102, 51, 153, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBar div{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navLink{
+  text-decoration: none;
   color: white;
+  font-size: 25px;
+  padding: 30px 50px 20px 50px;
+  cursor: pointer;
+  /* margin-bottom: -2px; */
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Homepage Content CSS*/
+
+
+.cardWrapper{
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0096ff;
+  margin: 0 auto 20px auto;  
+  transition: transform .7s;
 }
 
-@keyframes App-logo-spin {
+.cardWrapper:hover{
+  transform: scale(1.1);
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0 10px 0;
+}
+
+.p-off{
+  color: white;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.p-active{
+  
+  width: 40%;
+  border-radius: 10px;
+  background-color: green;
+  box-shadow: 0 0 10px green;
+  margin: 0 auto 20px auto;  
+  transition: transform .7s;
+}
+
+
+.mainWrapper{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logoWrapper{
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sunLogo{
+ 
+  width: 20%;
+ 
+  animation: sunLogo-spin infinite 20s linear;
+}
+
+
+
+@keyframes sunLogo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -36,3 +107,16 @@
     transform: rotate(360deg);
   }
 }
+
+.descContent{
+  text-align: center;
+  color: white;
+  width: 40%;
+  margin: -120px auto 70px auto;
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 0 0 10px white;
+}
+
+
+/* Favourites Page Content CSS */
